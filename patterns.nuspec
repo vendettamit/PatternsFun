@@ -13,8 +13,10 @@
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright &#x00A9; cshandler.com</copyright>
     <tags>csharp csharp-patterns design-patterns</tags>
-  <files>
-	<file src="Patterns.Cor\bin\$configuration$\Patterns.Cor.dll" target="lib\net45\" />
-  </files>
   </metadata>
+    <files>
+	<!-- <file src="$bin$\v4.0\Patterns.Cor.dll" target="lib\net40" /> -->
+	<file src="$bin$\v4.5\Patterns.Cor.dll" target="lib\net45" />
+        <!-- <file src="$bin$\v4.5.1\Patterns.Cor.dll" target="lib\net451" />-->
+  </files>
 </package>
