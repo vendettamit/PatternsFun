@@ -24,7 +24,7 @@ if not "%errorlevel%"=="0" goto failure
 
 REM Unit tests
 call %nuget% install NUnit.Runners -Version 2.6.4 -OutputDirectory packages
-packages\NUnit.Runners.2.6.4\tools\nunit-console.exe /config:%config% /framework:net-4.5 YourSolution\ProjectA.Tests\bin\%config%\ProjectA.Tests.dll
+packages\NUnit.Runners.2.6.4\tools\nunit-console.exe /config:%config% /framework:net-4.5 Patterns.Cor\Patterns.Cor.Tests\bin\%config%\Patterns.Cor.Tests.dll
 if not "%errorlevel%"=="0" goto failure
 
 mkdir Build
