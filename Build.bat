@@ -15,8 +15,8 @@ if "%nuget%" == "" (
 )
 
 REM Package restore
-call %NuGet% restore Pattern.Cor\packages.config -OutputDirectory %cd%\packages -NonInteractive
-call %NuGet% restore Pattern.Cor.Tests\packages.config -OutputDirectory %cd%\packages -NonInteractive
+call %NuGet% restore Patterns.Cor\packages.config -OutputDirectory %cd%\packages -NonInteractive
+call %NuGet% restore Patterns.Cor.Tests\packages.config -OutputDirectory %cd%\packages -NonInteractive
 
 REM Build
 %WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild Patterns.Cor.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
